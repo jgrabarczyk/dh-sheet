@@ -1,0 +1,18 @@
+.infobox {
+  &--wrapper {
+    display: grid;
+    max-width: 15rem;
+    margin-bottom: 15px;
+  }
+
+  &--name,
+  &--value {
+    // border: 1px solid blue;
+  }
+}
+.horizontal {
+  grid-template-columns: 1fr 1fr;
+}
+.vertical {
+  grid-template-rows: 1fr 1fr;
+}

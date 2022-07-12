@@ -1,0 +1,40 @@
+HTTP/1.1 200 OK
+Content-type: application/json; charset=utf-8
+
+
+{
+  "response": [
+    { "name": "Akrobatyka", "baseAttribute": "WW" },
+    { "name": "Analiza", "baseAttribute": "P" },
+    { "name": "Atletyka" , "baseAttribute": "S"},
+    { "name": "Blef" , "baseAttribute": "O"},
+    { "name": "Dowodzenie" , "baseAttribute": "O"},
+    { "name": "Handel" , "baseAttribute": "INT"},
+    { "name": "Korzystanie z tech." , "baseAttribute": "INT"},
+    { "name": "Lingwistyka", "baseAttribute": "INT", "custom": true },
+    { "name": "Logika" , "baseAttribute": "INT"},
+    { "name": "Medycyna" , "baseAttribute": "INT"},
+    { "name": "Nauka" , "baseAttribute": "INT", "custom": true},
+    { "name": "Nawigacja - Powierzchnia" , "baseAttribute": "INT"},
+    { "name": "Nawigacja - Przestrzeń" , "baseAttribute": "INT"},
+    { "name": "Nawigacja - Osnowa" , "baseAttribute": "INT"},
+    { "name": "Parowanie" , "baseAttribute": "WW"},
+    { "name": "Pilotaż - Naziemne" , "baseAttribute": "ZR"},
+    { "name": "Pilotaż - Powietrzne" , "baseAttribute": "ZR"},
+    { "name": "Pilotaż - Okręty kosmiczne" , "baseAttribute": "ZR"},
+    { "name": "Plotkowanie" , "baseAttribute": "O"},
+    { "name": "Przekonywanie" , "baseAttribute": "O"},
+    { "name": "Przesłuchiwanie" , "baseAttribute": "SW"},
+    { "name": "Przetrwanie" , "baseAttribute": "P"},
+    { "name": "Spostrzegawczość" , "baseAttribute": "P"},
+    { "name": "Ukrywanie się" , "baseAttribute": "ZR"},
+    { "name": "Unik" , "baseAttribute": "ZR"},
+    { "name": "Wiedza" , "baseAttribute": "INT", "custom": true},
+    { "name": "Wyczucie osnowy" , "baseAttribute": "P"},
+    { "name": "Zabezpieczenia" , "baseAttribute": "INT"},
+    { "name": "Zakazana wiedza" , "baseAttribute": "INT", "custom": true},
+    { "name": "Zastraszanie" , "baseAttribute": "S"},
+    { "name": "Zawód" , "baseAttribute": "INT", "custom": true},
+    { "name": "Zwinne palce" , "baseAttribute": "ZR"}
+  ]
+}

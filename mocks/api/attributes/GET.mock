@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Content-type: application/json; charset=utf-8
+
+
+{
+  "response": [
+    { "name": "Walka Wręcz", "shortName": "WW" },
+    { "name": "Umiejętnosci strzeleckie", "shortName": "US" },
+    { "name": "Siła" , "shortName": "S"},
+    { "name": "Wytrzymałość" , "shortName": "WT"},
+    { "name": "Zręczność" , "shortName": "ZR"},
+    { "name": "Inteligencja" , "shortName": "INT"},
+    { "name": "Percepcja" , "shortName": "P"},
+    { "name": "Siła woli", "shortName": "SW" },
+    { "name": "Ogłada" , "shortName": "O"},
+    { "name": "Wpływ" , "shortName": "WP"}
+  ]
+}
