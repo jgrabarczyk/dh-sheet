@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Attribute } from '../classes/attribute';
 import { Skill } from '../classes/skill';
 import { State } from '../classes/state.class';
+import { WeaponDto } from '../models/weapon.model';
 
 @Injectable({
   providedIn: 'root',
@@ -9,10 +10,6 @@ import { State } from '../classes/state.class';
 export class StateService {
   attributesState = new State<Attribute[]>();
   skillState = new State<Skill[]>();
-
-  constructor() {
-    setInterval(() => {
-      console.log(this.skillState);
-    }, 5000);
-  }
+  weaponsState = new State<WeaponDto[]>();
+  constructor() {}
 }

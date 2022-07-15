@@ -13,6 +13,14 @@ export class Attribute {
     return this.treshold.current;
   }
 
+  get isIncrementDisabled() {
+    return this.treshold.isIncrementDisabled;
+  }
+
+  get isDecrementDisabled() {
+    return this.treshold.isDecrementDisabled;
+  }
+
   name!: string;
   shortName!: string;
 

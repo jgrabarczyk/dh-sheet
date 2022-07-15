@@ -1,4 +1,24 @@
 .app {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template: "a a s" "e f s" "ap ap s" 1fr / max-content;
+}
+.attribute-list {
+  grid-area: a;
+}
+.skill-list {
+  grid-area: s;
+}
+.exp-bar {
+  grid-area: e;
+  align-self: baseline;
+  justify-self: center;
+}
+.fate-bar {
+  grid-area: f;
+  align-self: baseline;
+  justify-self: center;
+}
+
+.aptitudes {
+  grid-area: ap;
 }

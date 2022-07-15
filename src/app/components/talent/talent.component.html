@@ -1,0 +1,24 @@
+<div class="talent-disabled" *ngIf="!edit">
+  <p>{{ talent.caption }}</p>
+  <p>{{ talent.rulePage }}</p>
+  <button mat-mini-fab (click)="toggleEdit()"><mat-icon>edit</mat-icon></button>
+</div>
+
+<form *ngIf="edit">
+  <mat-form-field appearance="outline">
+    <mat-label>Opis Zdolności</mat-label>
+    <textarea
+      matInput
+      placeholder="..."
+      [formControl]="captionControl"
+    ></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Strona w podręczniku</mat-label>
+    <input matInput placeholder="..." [formControl]="rulePageControl" />
+  </mat-form-field>
+  <button mat-mini-fab (click)="save()"><mat-icon>save</mat-icon></button>
+  <button mat-mini-fab (click)="cancel()">
+    <mat-icon>cancel</mat-icon>
+  </button>
+</form>

@@ -1,0 +1,11 @@
+.weapon-row {
+  display: flex;
+}
+.weapon {
+  padding: 5px;
+  &::before {
+    content: attr(data-before);
+    display: block;
+    padding-right: 5px;
+  }
+}

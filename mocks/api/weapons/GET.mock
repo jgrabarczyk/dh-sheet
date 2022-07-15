@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Content-type: application/json; charset=utf-8
+
+
+{
+  "response": [
+   {
+    "name": "Pistolet Boltowy",
+    "damage": "1k10+5 eks",
+    "damageType": "boltowa",
+    "class": ["pistolet"],
+    "attributes": ["druzgocąca"],
+    "weight": "3.5kg",
+    "penetration": 4,
+    "description": "test",
+    "craftmenship": "niespotykana",
+    "range": "30m",
+    "rateOfFire": {
+      "single": 1,
+      "burst": 2
+    },
+    "clip": 8,
+    "reload": "runda"
+   },
+   {
+    "name": "Karabin Boltowy",
+    "damage": "1k10+5 eks",
+    "damageType": "boltowa",
+    "class": ["podstawowa"],
+    "attributes": ["druzgocąca"],
+    "weight": "3.5kg",
+    "penetration": 4,
+    "description": "test",
+    "craftmenship": "niespotykana",
+    "range": "100m",
+    "rateOfFire": {
+      "single": 1,
+      "burst": 3
+    },
+    "clip": 24,
+    "reload": "runda"
+   }
+  ]
+}

@@ -9,6 +9,13 @@ import { Skill } from '../../classes/skill';
 export class SkillComponent {
   @Input() skill!: Skill;
 
+  get isIncrementDisabled() {
+    return this.skill.isIncrementDisabled;
+  }
+  get isDecrementDisabled() {
+    return this.skill.isDecrementDisabled;
+  }
+
   increment(): void {
     this.skill.icrementThreshold();
   }

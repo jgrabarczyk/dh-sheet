@@ -1,0 +1,36 @@
+:host {
+  display: grid;
+  grid-template-columns: 200px 50px 50px 80px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.attribute {
+  &__name {
+    padding-left: 10px;
+  }
+  &__value {
+    font-weight: bold;
+  }
+  &__treshold {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+
+  &__name,
+  &__value,
+  &__treshold {
+    margin: 0;
+    align-self: center;
+  }
+  &__value,
+  &__treshold {
+    text-align: center;
+  }
+  &__value,
+  &__treshold
+  // &__button-wrapper
+  {
+    border-left: 1px solid black;
+  }
+}

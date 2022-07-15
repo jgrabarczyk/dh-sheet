@@ -6,9 +6,16 @@ export class Treshold {
     this.max = max;
     this.incrementBy = incrementBy;
   }
+  get isIncrementDisabled() {
+    return this.current >= this.max;
+  }
+
+  get isDecrementDisabled() {
+    return this.current <= 0;
+  }
 
   incrementTreshold() {
-    if (this.current >= this.max) {
+    if (this.isIncrementDisabled) {
       throw Error('Threshold max value reached');
     }
     this.current += 1;

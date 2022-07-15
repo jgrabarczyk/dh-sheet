@@ -9,6 +9,14 @@ import { SkillListComponent } from './components/skill-list/skill-list.component
 import { SkillComponent } from './components/skill/skill.component';
 import { ExpBarComponent } from './components/exp-bar/exp-bar.component';
 import { InfoboxComponent } from './components/infobox/infobox.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { FateBarComponent } from './components/fate-bar/fate-bar.component';
+import { AptitudesComponent } from './components/aptitudes/aptitudes.component';
+import { TalentsListComponent } from './components/talents-list/talents-list.component';
+import { TalentComponent } from './components/talent/talent.component';
+import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
+import { WeaponComponent } from './components/weapon/weapon.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +26,21 @@ import { InfoboxComponent } from './components/infobox/infobox.component';
     SkillListComponent,
     SkillComponent,
     ExpBarComponent,
+    FateBarComponent,
     InfoboxComponent,
+    AptitudesComponent,
+    TalentComponent,
+    TalentsListComponent,
+    WeaponListComponent,
+    WeaponComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

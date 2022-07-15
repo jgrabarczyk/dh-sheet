@@ -1,0 +1,49 @@
+<!-- <pre>
+  {{ weapon | json }}
+</pre> -->
+
+<div class="weapon-row">
+  <div class="weapon name" [attr.data-before]="titles.name">
+    {{ weapon.name }}
+  </div>
+  <div class="weapon class" [attr.data-before]="titles.class">
+    {{ weapon.class }}
+  </div>
+  <div class="weapon range" [attr.data-before]="titles.range">
+    {{ weapon.range }}
+  </div>
+  <div class="weapon rateOfFire" [attr.data-before]="titles.rateOfFire">
+    <!-- <div class="weapon single" [attr.data-before]="titles.single"> -->
+    {{ weapon.rateOfFire?.single ?? "-" }}/{{
+      weapon.rateOfFire?.burst ?? "-"
+    }}/{{ weapon.rateOfFire?.fullAuto ?? "-" }}
+    <!-- </div> -->
+    <!-- <div class="weapon burst" [attr.data-before]="titles.burst">
+      {{ weapon.rateOfFire?.burst ?? "-" }}
+    </div>
+    <div class="weapon auto" [attr.data-before]="titles.auto">
+      {{ weapon.rateOfFire?.fullAuto ?? "-" }}
+    </div> -->
+  </div>
+  <div class="weapon damage" [attr.data-before]="titles.damage">
+    {{ weapon.damage }}
+  </div>
+  <div class="weapon penetration" [attr.data-before]="titles.penetration">
+    {{ weapon.penetration }}
+  </div>
+  <div class="weapon clip" [attr.data-before]="titles.clip">
+    {{ weapon.clip }}
+  </div>
+  <div class="weapon reload" [attr.data-before]="titles.reload">
+    {{ weapon.reload }}
+  </div>
+  <div class="weapon reload" [attr.data-before]="titles.reload">
+    {{ weapon.attributes }}
+  </div>
+  <div class="weapon weight" [attr.data-before]="titles.weight">
+    {{ weapon.weight }}
+  </div>
+  <div class="weapon craftsmanship" [attr.data-before]="titles.craftsmanship">
+    {{ weapon.craftsmanship }}
+  </div>
+</div>

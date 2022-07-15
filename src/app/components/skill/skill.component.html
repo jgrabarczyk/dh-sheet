@@ -1,9 +1,25 @@
-{{ skill.name }}: {{ skill.value }}
-<br />
-{{ skill.currentTreshold }}
-<br />
-{{ skill.proficiency }}
-<br />
-<button (click)="increment()">increment</button>
-<button (click)="decrement()">decrement</button>
-<br /><br />
+<p class="skill__name">{{ skill.name }}</p>
+<p class="skill__value">{{ skill.value }}</p>
+
+<span class="skill__treshold">
+  {{ skill.currentTreshold }}
+</span>
+
+<div class="skill__button-wrapper">
+  <button
+    mat-icon-button
+    color="primary"
+    [disabled]="isIncrementDisabled"
+    (click)="increment()"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    color="primary"
+    [disabled]="isDecrementDisabled"
+    (click)="decrement()"
+  >
+    <mat-icon>remove</mat-icon>
+  </button>
+</div>

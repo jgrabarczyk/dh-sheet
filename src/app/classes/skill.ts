@@ -16,6 +16,14 @@ export class Skill {
     return this.treshold.current;
   }
 
+  get isIncrementDisabled() {
+    return this.treshold.isIncrementDisabled;
+  }
+
+  get isDecrementDisabled() {
+    return this.treshold.isDecrementDisabled && !this.proficiency;
+  }
+
   constructor(name: string, value: number) {
     this.name = name;
     this.baseValue_ = value;

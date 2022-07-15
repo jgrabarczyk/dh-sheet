@@ -7,8 +7,8 @@ import { Infobox } from 'src/app/classes/infobox';
   styleUrls: ['./exp-bar.component.scss'],
 })
 export class ExpBarComponent implements OnInit {
-  experienceToSpend = new Infobox('experianceToSpend', 0);
-  experienceSpent = new Infobox('experianceToSpend', 0);
+  experienceToSpend = new Infobox('PD do wydania', 0);
+  experienceSpent = new Infobox('Pd wydane', 0);
   constructor() {}
 
   ngOnInit(): void {}

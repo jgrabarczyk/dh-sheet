@@ -1,0 +1,14 @@
+<h3>Zdolności i właściwości</h3>
+<div class="talent-row" *ngFor="let talent of talents; let i = index">
+  <dhcs-talent [talent]="talent"></dhcs-talent>
+  <button
+    class="talent-row__delete"
+    mat-mini-fab
+    (click)="removeTalent(i)"
+    color="primary"
+  >
+    <mat-icon> delete</mat-icon>
+  </button>
+</div>
+
+<button mat-mini-fab (click)="addTalent()"><mat-icon> add</mat-icon></button>

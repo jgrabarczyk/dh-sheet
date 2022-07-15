@@ -9,6 +9,13 @@ import { Attribute } from 'src/app/classes/attribute';
 export class AttributeComponent {
   @Input() attribute!: Attribute;
 
+  get isIncrementDisabled() {
+    return this.attribute.isIncrementDisabled;
+  }
+  get isDecrementDisabled() {
+    return this.attribute.isDecrementDisabled;
+  }
+
   increment(): void {
     this.attribute.icrementThreshold();
   }

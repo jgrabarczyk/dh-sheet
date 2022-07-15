@@ -7,13 +7,14 @@ import { Infobox } from 'src/app/classes/infobox';
   styleUrls: ['./infobox.component.scss'],
 })
 export class InfoboxComponent implements OnInit {
-  @Input() name!: string;
-  @Input() value!: number;
-  @Input() type: 'horizontal' | 'vertical' = 'horizontal';
+  @Input() infobox!: Infobox;
+  // @Input() name!: string;
+  // @Input() value!: number;
+  // @Input() type: 'horizontal' | 'vertical' = 'horizontal';
 
-  infobox!: Infobox;
+  // infobox!: Infobox;
 
   ngOnInit(): void {
-    this.infobox = new Infobox(this.name, this.value);
+    // this.infobox = new Infobox(this.name, this.value);
   }
 }
